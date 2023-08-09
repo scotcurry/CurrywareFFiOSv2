@@ -32,5 +32,11 @@ final class CurrywareFFiOSTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+    func testDatabaseAPIHandler() async throws {
+        
+        let databaseAPIHandler = DatabaseAPIHandler()
+        let returnValue = try await databaseAPIHandler.makeDatabaseAPICall()
+        XCTAssertEqual("scot", "1")
+    }
 }

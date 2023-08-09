@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8934A8432A826B4600467E8D /* LeagueSettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A8422A826B4600467E8D /* LeagueSettingList.swift */; };
+		8934A8472A827F1200467E8D /* SaleTaxEntryIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A8462A827F1200467E8D /* SaleTaxEntryIdentifiable.swift */; };
+		8934A8492A82824100467E8D /* SalesTaxListObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A8482A82824100467E8D /* SalesTaxListObservable.swift */; };
+		8934A84C2A82931200467E8D /* DatadogCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8934A84B2A82931200467E8D /* DatadogCore */; };
+		8934A84E2A82931200467E8D /* DatadogCrashReporting in Frameworks */ = {isa = PBXBuildFile; productRef = 8934A84D2A82931200467E8D /* DatadogCrashReporting */; };
+		8934A8502A82931200467E8D /* DatadogLogs in Frameworks */ = {isa = PBXBuildFile; productRef = 8934A84F2A82931200467E8D /* DatadogLogs */; };
+		8934A8522A82931200467E8D /* DatadogRUM in Frameworks */ = {isa = PBXBuildFile; productRef = 8934A8512A82931200467E8D /* DatadogRUM */; };
+		8934A8542A82931200467E8D /* DatadogSessionReplay in Frameworks */ = {isa = PBXBuildFile; productRef = 8934A8532A82931200467E8D /* DatadogSessionReplay */; };
+		8934A8562A82931200467E8D /* DatadogTrace in Frameworks */ = {isa = PBXBuildFile; productRef = 8934A8552A82931200467E8D /* DatadogTrace */; };
+		8934A8582A82931200467E8D /* DatadogWebViewTracking in Frameworks */ = {isa = PBXBuildFile; productRef = 8934A8572A82931200467E8D /* DatadogWebViewTracking */; };
+		8934A85A2A82FE8800467E8D /* SalesTaxEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A8592A82FE8800467E8D /* SalesTaxEntry.swift */; };
+		8934A85C2A83039D00467E8D /* SalesTaxList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A85B2A83039D00467E8D /* SalesTaxList.swift */; };
+		89397C8C2A7F21E9008FC7A9 /* BundleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89397C8B2A7F21E9008FC7A9 /* BundleHandler.swift */; };
+		89397C8E2A7F2648008FC7A9 /* DatadogRumHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89397C8D2A7F2648008FC7A9 /* DatadogRumHandler.swift */; };
+		8967A84D2A81AC2F0088F42E /* DatabaseAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8967A84C2A81AC2F0088F42E /* DatabaseAPIView.swift */; };
+		8967A84F2A81AF510088F42E /* DatabaseAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */; };
+		89F5010F2A7FC42B00887D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5010E2A7FC42B00887D92 /* AppDelegate.swift */; };
 		89F5BFC72A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */; };
-		89F5BFC92A7E89C900B3EEC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFC82A7E89C900B3EEC7 /* ContentView.swift */; };
 		89F5BFCB2A7E89CA00B3EEC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F5BFCA2A7E89CA00B3EEC7 /* Assets.xcassets */; };
 		89F5BFCE2A7E89CA00B3EEC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F5BFCD2A7E89CA00B3EEC7 /* Preview Assets.xcassets */; };
 		89F5BFD82A7E89CA00B3EEC7 /* CurrywareFFiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFD72A7E89CA00B3EEC7 /* CurrywareFFiOSTests.swift */; };
 		89F5BFE22A7E89CA00B3EEC7 /* CurrywareFFiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFE12A7E89CA00B3EEC7 /* CurrywareFFiOSUITests.swift */; };
 		89F5BFE42A7E89CA00B3EEC7 /* CurrywareFFiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFE32A7E89CA00B3EEC7 /* CurrywareFFiOSUITestsLaunchTests.swift */; };
+		89F5BFF22A7E89F800B3EEC7 /* LeagueSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFF12A7E89F800B3EEC7 /* LeagueSettingsView.swift */; };
+		89F5C0032A7E931200B3EEC7 /* LeagueSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5C0022A7E931200B3EEC7 /* LeagueSetting.swift */; };
+		89F5C0052A7E9BB700B3EEC7 /* LeagueSettingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5C0042A7E9BB700B3EEC7 /* LeagueSettingCardView.swift */; };
+		89F5C0082A7ED3C200B3EEC7 /* LeagueSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5C0072A7ED3C200B3EEC7 /* LeagueSelectionView.swift */; };
+		89F5C00A2A7ED42A00B3EEC7 /* LeaguesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5C0092A7ED42A00B3EEC7 /* LeaguesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +55,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8934A8422A826B4600467E8D /* LeagueSettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSettingList.swift; sourceTree = "<group>"; };
+		8934A8462A827F1200467E8D /* SaleTaxEntryIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleTaxEntryIdentifiable.swift; sourceTree = "<group>"; };
+		8934A8482A82824100467E8D /* SalesTaxListObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxListObservable.swift; sourceTree = "<group>"; };
+		8934A8592A82FE8800467E8D /* SalesTaxEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxEntry.swift; sourceTree = "<group>"; };
+		8934A85B2A83039D00467E8D /* SalesTaxList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxList.swift; sourceTree = "<group>"; };
+		89397C8B2A7F21E9008FC7A9 /* BundleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleHandler.swift; sourceTree = "<group>"; };
+		89397C8D2A7F2648008FC7A9 /* DatadogRumHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatadogRumHandler.swift; sourceTree = "<group>"; };
+		8967A84C2A81AC2F0088F42E /* DatabaseAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIView.swift; sourceTree = "<group>"; };
+		8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIHandler.swift; sourceTree = "<group>"; };
+		89F5010E2A7FC42B00887D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F5BFC32A7E89C900B3EEC7 /* CurrywareFFiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrywareFFiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrywareFFiOSApp.swift; sourceTree = "<group>"; };
-		89F5BFC82A7E89C900B3EEC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89F5BFCA2A7E89CA00B3EEC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F5BFCD2A7E89CA00B3EEC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89F5BFD32A7E89CA00B3EEC7 /* CurrywareFFiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrywareFFiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +74,12 @@
 		89F5BFDD2A7E89CA00B3EEC7 /* CurrywareFFiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrywareFFiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F5BFE12A7E89CA00B3EEC7 /* CurrywareFFiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrywareFFiOSUITests.swift; sourceTree = "<group>"; };
 		89F5BFE32A7E89CA00B3EEC7 /* CurrywareFFiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrywareFFiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89F5BFF12A7E89F800B3EEC7 /* LeagueSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSettingsView.swift; sourceTree = "<group>"; };
+		89F5C0002A7E8E6100B3EEC7 /* secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = secrets.xcconfig; sourceTree = "<group>"; };
+		89F5C0022A7E931200B3EEC7 /* LeagueSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSetting.swift; sourceTree = "<group>"; };
+		89F5C0042A7E9BB700B3EEC7 /* LeagueSettingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSettingCardView.swift; sourceTree = "<group>"; };
+		89F5C0072A7ED3C200B3EEC7 /* LeagueSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectionView.swift; sourceTree = "<group>"; };
+		89F5C0092A7ED42A00B3EEC7 /* LeaguesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +87,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8934A84E2A82931200467E8D /* DatadogCrashReporting in Frameworks */,
+				8934A8502A82931200467E8D /* DatadogLogs in Frameworks */,
+				8934A8582A82931200467E8D /* DatadogWebViewTracking in Frameworks */,
+				8934A8522A82931200467E8D /* DatadogRUM in Frameworks */,
+				8934A8562A82931200467E8D /* DatadogTrace in Frameworks */,
+				8934A8542A82931200467E8D /* DatadogSessionReplay in Frameworks */,
+				8934A84C2A82931200467E8D /* DatadogCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,9 +114,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8934A8442A827ED000467E8D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8934A8462A827F1200467E8D /* SaleTaxEntryIdentifiable.swift */,
+				8934A8482A82824100467E8D /* SalesTaxListObservable.swift */,
+				8934A8592A82FE8800467E8D /* SalesTaxEntry.swift */,
+				8934A85B2A83039D00467E8D /* SalesTaxList.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		8934A8452A827EDD00467E8D /* League */ = {
+			isa = PBXGroup;
+			children = (
+				89F5C0022A7E931200B3EEC7 /* LeagueSetting.swift */,
+				89F5C0092A7ED42A00B3EEC7 /* LeaguesList.swift */,
+				8934A8422A826B4600467E8D /* LeagueSettingList.swift */,
+			);
+			path = League;
+			sourceTree = "<group>";
+		};
+		89397C8A2A7F21C6008FC7A9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				89F5010E2A7FC42B00887D92 /* AppDelegate.swift */,
+				89397C8B2A7F21E9008FC7A9 /* BundleHandler.swift */,
+				89397C8D2A7F2648008FC7A9 /* DatadogRumHandler.swift */,
+				8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		89F5BFBA2A7E89C900B3EEC7 = {
 			isa = PBXGroup;
 			children = (
+				89F5C0002A7E8E6100B3EEC7 /* secrets.xcconfig */,
 				89F5BFC52A7E89C900B3EEC7 /* CurrywareFFiOS */,
 				89F5BFD62A7E89CA00B3EEC7 /* CurrywareFFiOSTests */,
 				89F5BFE02A7E89CA00B3EEC7 /* CurrywareFFiOSUITests */,
@@ -94,8 +170,10 @@
 		89F5BFC52A7E89C900B3EEC7 /* CurrywareFFiOS */ = {
 			isa = PBXGroup;
 			children = (
+				89397C8A2A7F21C6008FC7A9 /* Classes */,
+				89F5C0012A7E92EB00B3EEC7 /* Models */,
+				89F5BFF02A7E89D700B3EEC7 /* Views */,
 				89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */,
-				89F5BFC82A7E89C900B3EEC7 /* ContentView.swift */,
 				89F5BFCA2A7E89CA00B3EEC7 /* Assets.xcassets */,
 				89F5BFCC2A7E89CA00B3EEC7 /* Preview Content */,
 			);
@@ -127,6 +205,26 @@
 			path = CurrywareFFiOSUITests;
 			sourceTree = "<group>";
 		};
+		89F5BFF02A7E89D700B3EEC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89F5BFF12A7E89F800B3EEC7 /* LeagueSettingsView.swift */,
+				89F5C0042A7E9BB700B3EEC7 /* LeagueSettingCardView.swift */,
+				89F5C0072A7ED3C200B3EEC7 /* LeagueSelectionView.swift */,
+				8967A84C2A81AC2F0088F42E /* DatabaseAPIView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89F5C0012A7E92EB00B3EEC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8934A8452A827EDD00467E8D /* League */,
+				8934A8442A827ED000467E8D /* Database */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +241,15 @@
 			dependencies = (
 			);
 			name = CurrywareFFiOS;
+			packageProductDependencies = (
+				8934A84B2A82931200467E8D /* DatadogCore */,
+				8934A84D2A82931200467E8D /* DatadogCrashReporting */,
+				8934A84F2A82931200467E8D /* DatadogLogs */,
+				8934A8512A82931200467E8D /* DatadogRUM */,
+				8934A8532A82931200467E8D /* DatadogSessionReplay */,
+				8934A8552A82931200467E8D /* DatadogTrace */,
+				8934A8572A82931200467E8D /* DatadogWebViewTracking */,
+			);
 			productName = CurrywareFFiOS;
 			productReference = 89F5BFC32A7E89C900B3EEC7 /* CurrywareFFiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +322,9 @@
 				Base,
 			);
 			mainGroup = 89F5BFBA2A7E89C900B3EEC7;
+			packageReferences = (
+				8934A84A2A82931200467E8D /* XCRemoteSwiftPackageReference "dd-sdk-ios" */,
+			);
 			productRefGroup = 89F5BFC42A7E89C900B3EEC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +367,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F5BFC92A7E89C900B3EEC7 /* ContentView.swift in Sources */,
+				89397C8E2A7F2648008FC7A9 /* DatadogRumHandler.swift in Sources */,
+				89F5C0082A7ED3C200B3EEC7 /* LeagueSelectionView.swift in Sources */,
+				89F5C0052A7E9BB700B3EEC7 /* LeagueSettingCardView.swift in Sources */,
+				89F5010F2A7FC42B00887D92 /* AppDelegate.swift in Sources */,
+				8967A84D2A81AC2F0088F42E /* DatabaseAPIView.swift in Sources */,
+				8934A85A2A82FE8800467E8D /* SalesTaxEntry.swift in Sources */,
+				8967A84F2A81AF510088F42E /* DatabaseAPIHandler.swift in Sources */,
+				89F5BFF22A7E89F800B3EEC7 /* LeagueSettingsView.swift in Sources */,
+				89F5C00A2A7ED42A00B3EEC7 /* LeaguesList.swift in Sources */,
+				8934A8492A82824100467E8D /* SalesTaxListObservable.swift in Sources */,
 				89F5BFC72A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift in Sources */,
+				89F5C0032A7E931200B3EEC7 /* LeagueSetting.swift in Sources */,
+				89397C8C2A7F21E9008FC7A9 /* BundleHandler.swift in Sources */,
+				8934A8432A826B4600467E8D /* LeagueSettingList.swift in Sources */,
+				8934A85C2A83039D00467E8D /* SalesTaxList.swift in Sources */,
+				8934A8472A827F1200467E8D /* SaleTaxEntryIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,14 +535,18 @@
 		};
 		89F5BFE82A7E89CA00B3EEC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F5C0002A7E8E6100B3EEC7 /* secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrywareFFiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = D8MTP98QK2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrywareFFiOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Curryware FF";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,14 +567,18 @@
 		};
 		89F5BFE92A7E89CA00B3EEC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F5C0002A7E8E6100B3EEC7 /* secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrywareFFiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = D8MTP98QK2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrywareFFiOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Curryware FF";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,6 +604,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8MTP98QK2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -491,6 +624,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8MTP98QK2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -509,6 +643,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8MTP98QK2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.curryware.CurrywareFFiOSUITests;
@@ -526,6 +661,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8MTP98QK2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.curryware.CurrywareFFiOSUITests;
@@ -547,7 +683,7 @@
 				89F5BFE62A7E89CA00B3EEC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		89F5BFE72A7E89CA00B3EEC7 /* Build configuration list for PBXNativeTarget "CurrywareFFiOS" */ = {
 			isa = XCConfigurationList;
@@ -556,7 +692,7 @@
 				89F5BFE92A7E89CA00B3EEC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		89F5BFEA2A7E89CA00B3EEC7 /* Build configuration list for PBXNativeTarget "CurrywareFFiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -565,7 +701,7 @@
 				89F5BFEC2A7E89CA00B3EEC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		89F5BFED2A7E89CA00B3EEC7 /* Build configuration list for PBXNativeTarget "CurrywareFFiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,9 +710,58 @@
 				89F5BFEF2A7E89CA00B3EEC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8934A84A2A82931200467E8D /* XCRemoteSwiftPackageReference "dd-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Datadog/dd-sdk-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8934A84B2A82931200467E8D /* DatadogCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8934A84A2A82931200467E8D /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogCore;
+		};
+		8934A84D2A82931200467E8D /* DatadogCrashReporting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8934A84A2A82931200467E8D /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogCrashReporting;
+		};
+		8934A84F2A82931200467E8D /* DatadogLogs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8934A84A2A82931200467E8D /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogLogs;
+		};
+		8934A8512A82931200467E8D /* DatadogRUM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8934A84A2A82931200467E8D /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogRUM;
+		};
+		8934A8532A82931200467E8D /* DatadogSessionReplay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8934A84A2A82931200467E8D /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogSessionReplay;
+		};
+		8934A8552A82931200467E8D /* DatadogTrace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8934A84A2A82931200467E8D /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogTrace;
+		};
+		8934A8572A82931200467E8D /* DatadogWebViewTracking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8934A84A2A82931200467E8D /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogWebViewTracking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89F5BFBB2A7E89C900B3EEC7 /* Project object */;
 }
