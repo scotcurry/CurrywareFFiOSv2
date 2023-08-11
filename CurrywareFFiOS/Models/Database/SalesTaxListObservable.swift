@@ -6,18 +6,24 @@
 //
 
 import Foundation
-import os
+import DatadogTrace
 
+@MainActor
 class SalesTaxListObservable: ObservableObject {
     
-    @Published var salesTaxList: [SaleTaxEntryIdentifiable] = []
+    @Published private(set) var salesTaxListItems: [SaleTaxEntryIdentifiable] = []
     
     func getSalesTaxList() async {
         
+        let tracer = Tracer.shared()
+        let span = tracer.startRootSpan(operationName: "getSalesTaxList", tags: ["env": "prod"], startTime: nil)
+        let spanContext = span.context
+        
         let databaseHandler = DatabaseAPIHandler()
         print("Getting getSalesTaxList()")
+        LoggingHandler.createLogEntry(message: "Getting getSalesTaxList()")
         do {
-            let fetchSalesTaxEntries = try await databaseHandler.makeDatabaseAPICall()
+            let fetchSalesTaxEntries = try await databaseHandler.makeDatabaseAPICall(rootSpan: span)
             var tempSalesTaxList: [SaleTaxEntryIdentifiable] = []
             for saleTaxEntry in fetchSalesTaxEntries {
                 let id = UUID()
@@ -26,7 +32,8 @@ class SalesTaxListObservable: ObservableObject {
                 tempSalesTaxList.append(salesTaxEntryIdentifiable)
             }
             print("Tax Entries: \(tempSalesTaxList.count)")
-            salesTaxList = tempSalesTaxList
+            LoggingHandler.createLogEntry(message: "Tax Entries: \(tempSalesTaxList.count)")
+            salesTaxListItems = tempSalesTaxList
             
         } catch DatabaseHandlerError.inValidResponse {
             print("Got an invalid response!")
@@ -35,5 +42,7 @@ class SalesTaxListObservable: ObservableObject {
         } catch {
             print("Unknown Exception!")
         }
+        
+        span.finish()
     }
 }

@@ -21,8 +21,9 @@
 		8934A85C2A83039D00467E8D /* SalesTaxList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A85B2A83039D00467E8D /* SalesTaxList.swift */; };
 		89397C8C2A7F21E9008FC7A9 /* BundleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89397C8B2A7F21E9008FC7A9 /* BundleHandler.swift */; };
 		89397C8E2A7F2648008FC7A9 /* DatadogRumHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89397C8D2A7F2648008FC7A9 /* DatadogRumHandler.swift */; };
-		8967A84D2A81AC2F0088F42E /* DatabaseAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8967A84C2A81AC2F0088F42E /* DatabaseAPIView.swift */; };
+		8942B1462A83FDC50055993E /* DatabaseAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942B1452A83FDC50055993E /* DatabaseAPIView.swift */; };
 		8967A84F2A81AF510088F42E /* DatabaseAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */; };
+		89A7EBEC2A83D54000A04B07 /* LoggingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */; };
 		89F5010F2A7FC42B00887D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5010E2A7FC42B00887D92 /* AppDelegate.swift */; };
 		89F5BFC72A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */; };
 		89F5BFCB2A7E89CA00B3EEC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F5BFCA2A7E89CA00B3EEC7 /* Assets.xcassets */; };
@@ -62,8 +63,9 @@
 		8934A85B2A83039D00467E8D /* SalesTaxList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxList.swift; sourceTree = "<group>"; };
 		89397C8B2A7F21E9008FC7A9 /* BundleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleHandler.swift; sourceTree = "<group>"; };
 		89397C8D2A7F2648008FC7A9 /* DatadogRumHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatadogRumHandler.swift; sourceTree = "<group>"; };
-		8967A84C2A81AC2F0088F42E /* DatabaseAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIView.swift; sourceTree = "<group>"; };
+		8942B1452A83FDC50055993E /* DatabaseAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIView.swift; sourceTree = "<group>"; };
 		8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIHandler.swift; sourceTree = "<group>"; };
+		89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingHandler.swift; sourceTree = "<group>"; };
 		89F5010E2A7FC42B00887D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F5BFC32A7E89C900B3EEC7 /* CurrywareFFiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrywareFFiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrywareFFiOSApp.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				89397C8B2A7F21E9008FC7A9 /* BundleHandler.swift */,
 				89397C8D2A7F2648008FC7A9 /* DatadogRumHandler.swift */,
 				8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */,
+				89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -211,7 +214,7 @@
 				89F5BFF12A7E89F800B3EEC7 /* LeagueSettingsView.swift */,
 				89F5C0042A7E9BB700B3EEC7 /* LeagueSettingCardView.swift */,
 				89F5C0072A7ED3C200B3EEC7 /* LeagueSelectionView.swift */,
-				8967A84C2A81AC2F0088F42E /* DatabaseAPIView.swift */,
+				8942B1452A83FDC50055993E /* DatabaseAPIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,7 +374,7 @@
 				89F5C0082A7ED3C200B3EEC7 /* LeagueSelectionView.swift in Sources */,
 				89F5C0052A7E9BB700B3EEC7 /* LeagueSettingCardView.swift in Sources */,
 				89F5010F2A7FC42B00887D92 /* AppDelegate.swift in Sources */,
-				8967A84D2A81AC2F0088F42E /* DatabaseAPIView.swift in Sources */,
+				89A7EBEC2A83D54000A04B07 /* LoggingHandler.swift in Sources */,
 				8934A85A2A82FE8800467E8D /* SalesTaxEntry.swift in Sources */,
 				8967A84F2A81AF510088F42E /* DatabaseAPIHandler.swift in Sources */,
 				89F5BFF22A7E89F800B3EEC7 /* LeagueSettingsView.swift in Sources */,
@@ -383,6 +386,7 @@
 				8934A8432A826B4600467E8D /* LeagueSettingList.swift in Sources */,
 				8934A85C2A83039D00467E8D /* SalesTaxList.swift in Sources */,
 				8934A8472A827F1200467E8D /* SaleTaxEntryIdentifiable.swift in Sources */,
+				8942B1462A83FDC50055993E /* DatabaseAPIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

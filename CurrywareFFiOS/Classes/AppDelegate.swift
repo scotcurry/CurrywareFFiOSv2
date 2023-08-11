@@ -2,6 +2,7 @@
 //
 
 import UIKit
+import OSLog
 import DatadogCore
 import DatadogRUM
 

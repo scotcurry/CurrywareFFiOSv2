@@ -14,10 +14,18 @@ struct DatabaseAPIView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(stateTaxListIdentifiable.salesTaxList) {item in
+                ForEach(stateTaxListIdentifiable.salesTaxListItems) {item in
                     Text(item.stateName)
                 }
             }
+            .navigationTitle("State Sales Tax Rates")
+            .listStyle(.plain)
+            .refreshable {
+                await stateTaxListIdentifiable.getSalesTaxList()
+            }
+        }
+        .task {
+            await stateTaxListIdentifiable.getSalesTaxList()
         }
     }
 }

@@ -33,6 +33,16 @@ struct DatadogRumHandler {
         RUM.enable(with: rumConfiguration)
 
         Logs.enable()
-        Trace.enable()
+        let loggerConfiguration = Logger.Configuration(
+            name: "currywareffios",
+            networkInfoEnabled: true,
+            remoteLogThreshold: .info,
+            consoleLogFormat: .shortWith(prefix: "iOS")
+        )
+        let logger = Logger.create(with: loggerConfiguration)
+        logger.info("Starting Logging", attributes: ["location": "DatadogRumHandler"])
+        
+        let traceConfiguration = Trace.Configuration(sampleRate: 100, networkInfoEnabled: true)
+        Trace.enable(with: traceConfiguration)
     }
  }

@@ -22,8 +22,7 @@ struct LeagueSelectionView: View {
             }
             .navigationTitle("Fantasy Teams")
         }
-        
-        // .trackRUMView(name: "LeagueSelectionView")
+        .trackRUMView(name: "LeagueSelectionView")
     }
 }
 
