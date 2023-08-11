@@ -66,6 +66,7 @@
 		8942B1452A83FDC50055993E /* DatabaseAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIView.swift; sourceTree = "<group>"; };
 		8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIHandler.swift; sourceTree = "<group>"; };
 		89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingHandler.swift; sourceTree = "<group>"; };
+		89B292162A86A7DB00A264E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		89F5010E2A7FC42B00887D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F5BFC32A7E89C900B3EEC7 /* CurrywareFFiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrywareFFiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrywareFFiOSApp.swift; sourceTree = "<group>"; };
@@ -152,6 +153,7 @@
 		89F5BFBA2A7E89C900B3EEC7 = {
 			isa = PBXGroup;
 			children = (
+				89B292162A86A7DB00A264E7 /* README.md */,
 				89F5C0002A7E8E6100B3EEC7 /* secrets.xcconfig */,
 				89F5BFC52A7E89C900B3EEC7 /* CurrywareFFiOS */,
 				89F5BFD62A7E89CA00B3EEC7 /* CurrywareFFiOSTests */,

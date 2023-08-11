@@ -7,6 +7,7 @@
 
 import Foundation
 import DatadogTrace
+import DatadogInternal
 
 struct DatabaseAPIHandler {
     
@@ -19,12 +20,15 @@ struct DatabaseAPIHandler {
         // Datadog functionality.  Build out the headers
         let span = tracer.startSpan(operationName: "makeDatabaseAPICall", childOf: rootSpan.context)
         LoggingHandler.createLogEntry(message: "Trying makeDatabaseAPICallSpan")
-        //let headerWriter = DatadogInternal.HTTPHeadersWriter(samplingRate: 100)
+        let headerWriter = HTTPHeadersWriter(samplingRate: 100)
+        tracer.inject(spanContext: rootSpan.context, writer: headerWriter)
         
         let databaseURL = BundleHandler.getDatabaseAPIURL()
         if let databaseURL = URL(string: databaseURL) {
-            let request = URLRequest(url: databaseURL)
-            // request.addValue(<#T##value: String##String#>, forHTTPHeaderField: <#T##String#>)
+            var request = URLRequest(url: databaseURL)
+            for (headerField, value) in headerWriter.traceHeaderFields {
+                request.addValue(value, forHTTPHeaderField: headerField)
+            }
             
             let (data, response) = try await URLSession.shared.data(for: request)
             let validRange = 200...299
