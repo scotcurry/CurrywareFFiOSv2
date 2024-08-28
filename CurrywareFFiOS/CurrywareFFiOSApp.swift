@@ -15,10 +15,11 @@ struct CurrywareFFiOSApp: App {
     // The first question mark means the actual infoDictionary may be nil.  The as? does an "optional" downcast, which
     // tries to take the type of Any and cast it to string.  This may not work.
     let leagueList = LeagueList.leagueData
+    let leagueSettings = LeagueSetting.sampleData
     
     var body: some Scene {
         WindowGroup {
-            LeagueSelectionView(leagueList: leagueList)
+            InitialContent(leagueList: leagueList, leagueSettings: leagueSettings)
         }
     }
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		89397C8E2A7F2648008FC7A9 /* DatadogRumHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89397C8D2A7F2648008FC7A9 /* DatadogRumHandler.swift */; };
 		8942B1462A83FDC50055993E /* DatabaseAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942B1452A83FDC50055993E /* DatabaseAPIView.swift */; };
 		8967A84F2A81AF510088F42E /* DatabaseAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */; };
+		8972974D2C7E47BD009937DC /* InitialContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972974C2C7E47BD009937DC /* InitialContent.swift */; };
 		89A7EBEC2A83D54000A04B07 /* LoggingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */; };
 		89F5010F2A7FC42B00887D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5010E2A7FC42B00887D92 /* AppDelegate.swift */; };
 		89F5BFC72A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */; };
@@ -65,6 +66,8 @@
 		89397C8D2A7F2648008FC7A9 /* DatadogRumHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatadogRumHandler.swift; sourceTree = "<group>"; };
 		8942B1452A83FDC50055993E /* DatabaseAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIView.swift; sourceTree = "<group>"; };
 		8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIHandler.swift; sourceTree = "<group>"; };
+		897297452C7E45D8009937DC /* LeagueSettingCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueSettingCardView.swift; sourceTree = "<group>"; };
+		8972974C2C7E47BD009937DC /* InitialContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialContent.swift; sourceTree = "<group>"; };
 		89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingHandler.swift; sourceTree = "<group>"; };
 		89B292162A86A7DB00A264E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		89F5010E2A7FC42B00887D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +83,7 @@
 		89F5BFF12A7E89F800B3EEC7 /* LeagueSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSettingsView.swift; sourceTree = "<group>"; };
 		89F5C0002A7E8E6100B3EEC7 /* secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = secrets.xcconfig; sourceTree = "<group>"; };
 		89F5C0022A7E931200B3EEC7 /* LeagueSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSetting.swift; sourceTree = "<group>"; };
-		89F5C0042A7E9BB700B3EEC7 /* LeagueSettingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSettingCardView.swift; sourceTree = "<group>"; };
+		89F5C0042A7E9BB700B3EEC7 /* LeagueSettingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeagueSettingCardView.swift; path = ../../Views/LeagueSettingCardView.swift; sourceTree = "<group>"; };
 		89F5C0072A7ED3C200B3EEC7 /* LeagueSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectionView.swift; sourceTree = "<group>"; };
 		89F5C0092A7ED42A00B3EEC7 /* LeaguesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +123,7 @@
 		8934A8442A827ED000467E8D /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				89F5C0042A7E9BB700B3EEC7 /* LeagueSettingCardView.swift */,
 				8934A8462A827F1200467E8D /* SaleTaxEntryIdentifiable.swift */,
 				8934A8482A82824100467E8D /* SalesTaxListObservable.swift */,
 				8934A8592A82FE8800467E8D /* SalesTaxEntry.swift */,
@@ -213,10 +217,11 @@
 		89F5BFF02A7E89D700B3EEC7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				89F5BFF12A7E89F800B3EEC7 /* LeagueSettingsView.swift */,
-				89F5C0042A7E9BB700B3EEC7 /* LeagueSettingCardView.swift */,
 				89F5C0072A7ED3C200B3EEC7 /* LeagueSelectionView.swift */,
+				897297452C7E45D8009937DC /* LeagueSettingCardView.swift */,
 				8942B1452A83FDC50055993E /* DatabaseAPIView.swift */,
+				89F5BFF12A7E89F800B3EEC7 /* LeagueSettingsView.swift */,
+				8972974C2C7E47BD009937DC /* InitialContent.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,7 +308,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					89F5BFC22A7E89C900B3EEC7 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -319,7 +324,7 @@
 				};
 			};
 			buildConfigurationList = 89F5BFBE2A7E89C900B3EEC7 /* Build configuration list for PBXProject "CurrywareFFiOS" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -377,6 +382,7 @@
 				89F5C0052A7E9BB700B3EEC7 /* LeagueSettingCardView.swift in Sources */,
 				89F5010F2A7FC42B00887D92 /* AppDelegate.swift in Sources */,
 				89A7EBEC2A83D54000A04B07 /* LoggingHandler.swift in Sources */,
+				8972974D2C7E47BD009937DC /* InitialContent.swift in Sources */,
 				8934A85A2A82FE8800467E8D /* SalesTaxEntry.swift in Sources */,
 				8967A84F2A81AF510088F42E /* DatabaseAPIHandler.swift in Sources */,
 				89F5BFF22A7E89F800B3EEC7 /* LeagueSettingsView.swift in Sources */,
@@ -461,6 +467,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -475,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -521,6 +528,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -529,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -545,6 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrywareFFiOS/Preview Content\"";
@@ -558,6 +567,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,6 +575,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.curryware.CurrywareFFiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,6 +588,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrywareFFiOS/Preview Content\"";
@@ -590,6 +602,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,6 +610,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.curryware.CurrywareFFiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

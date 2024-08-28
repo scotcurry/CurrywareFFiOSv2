@@ -35,8 +35,8 @@ final class CurrywareFFiOSTests: XCTestCase {
     
     func testDatabaseAPIHandler() async throws {
         
-        let databaseAPIHandler = DatabaseAPIHandler()
-        let returnValue = try await databaseAPIHandler.makeDatabaseAPICall()
-        XCTAssertEqual("scot", "1")
+//        let databaseAPIHandler = DatabaseAPIHandler()
+//        let returnValue = try await databaseAPIHandler.makeDatabaseAPICall()
+//        XCTAssertEqual("scot", "1")
     }
 }

@@ -17,7 +17,7 @@ class SalesTaxListObservable: ObservableObject {
         
         let tracer = Tracer.shared()
         let span = tracer.startRootSpan(operationName: "getSalesTaxList", tags: ["env": "prod"], startTime: nil)
-        let spanContext = span.context
+        // let spanContext = span.context
         
         let databaseHandler = DatabaseAPIHandler()
         print("Getting getSalesTaxList()")

@@ -18,9 +18,8 @@ struct DatabaseAPIHandler {
         let responseSpan = tracer.startSpan(operationName: "makeDatabaseAPICall", childOf: rootSpan.context)
         
         // Datadog functionality.  Build out the headers
-        let span = tracer.startSpan(operationName: "makeDatabaseAPICall", childOf: rootSpan.context)
         LoggingHandler.createLogEntry(message: "Trying makeDatabaseAPICallSpan")
-        let headerWriter = HTTPHeadersWriter(samplingRate: 100)
+        let headerWriter = HTTPHeadersWriter(samplingStrategy: TraceSamplingStrategy.custom(sampleRate: 100.0), traceContextInjection: TraceContextInjection.all)
         tracer.inject(spanContext: rootSpan.context, writer: headerWriter)
         
         let databaseURL = BundleHandler.getDatabaseAPIURL()
