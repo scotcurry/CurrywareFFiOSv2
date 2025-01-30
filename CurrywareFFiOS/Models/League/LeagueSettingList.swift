@@ -14,5 +14,6 @@ class LeagueSettingList: ObservableObject {
     
     func getLeagueSettings() {
         
+        LoggingHandler.createLogEntry(message: "Starting getLeagueSettings")
     }
 }

@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct CurrywareFFiOSApp: App {
     
+    // This is calls the code in Classes -> AppDelegate.  These are all lifecycle changes that are available for handling.
+    // https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     // The first question mark means the actual infoDictionary may be nil.  The as? does an "optional" downcast, which

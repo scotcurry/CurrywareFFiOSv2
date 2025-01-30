@@ -28,6 +28,7 @@ struct LeagueSetting: Identifiable, Codable {
         self.statValue = statValue
         self.statBonusTarget = statBonusTarget
         self.statBonusPoints = statBonusPoints
+        //LoggingHandler.createLogEntry(message: "Hello Scot")
     }
 }
 

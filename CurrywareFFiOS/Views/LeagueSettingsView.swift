@@ -26,6 +26,8 @@ struct LeagueSettingsView: View {
             }
             .padding(.bottom)
             
+            Spacer()
+            
             HStack {
                 Text("Passing Yards")
                 TextField("yds", text: $passingYards)
@@ -39,6 +41,10 @@ struct LeagueSettingsView: View {
                 TextField("TD's", text: $passingTds)
             }
             .padding(.leading)
+            
+            Spacer()
+            
+            
             Button("Calculate Total") {
                 let passingYardsValue: Float = 0.04
                 let passingYardsFloat = Float(passingYards)
@@ -54,6 +60,10 @@ struct LeagueSettingsView: View {
             }
             .padding(.bottom)
             Spacer()
+            
+            Image(systemName: "sum")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
             
             HStack {
                 Text("Total Points")

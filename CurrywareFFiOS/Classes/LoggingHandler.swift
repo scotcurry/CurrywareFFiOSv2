@@ -5,13 +5,21 @@
 //  Created by Scot Curry on 8/9/23.
 //
 
+// import os
 import Foundation
-
+import DatadogCore
 import DatadogLogs
 
-struct LoggingHandler {
+public struct LoggingHandler {
     
     static func createLogEntry(message: String) {
+        
+        let appID: String = BundleHandler.getAppID()
+        let clientToken: String = BundleHandler.getClientToken()
+
+        let datadogConfiguration = Datadog.Configuration(
+            clientToken: clientToken,
+            env: "prod")
         
         let loggerConfiguration = Logger.Configuration(
             name: "currywareffios",
@@ -19,7 +27,15 @@ struct LoggingHandler {
             remoteLogThreshold: .info,
             consoleLogFormat: .shortWith(prefix: "iOS")
         )
-        let logger = Logger.create(with: loggerConfiguration)
-        logger.info(message)
+        let ddInitialized = Datadog.isInitialized()
+        
+        if ddInitialized == false {
+            Datadog.initialize(with: datadogConfiguration, trackingConsent: .granted)
+            let logger = Logger.create(with: loggerConfiguration)
+            logger.info("Initialized Logger")
+        } else {
+            let logger = Logger.create(with: loggerConfiguration)
+            logger.info("Did not initialize Logger")
+        }
     }
 }

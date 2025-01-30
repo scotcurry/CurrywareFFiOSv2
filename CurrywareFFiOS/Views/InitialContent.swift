@@ -25,6 +25,11 @@ struct InitialContent: View {
                 .tabItem {
                     Label("Pass Settings", systemImage: "figure.american.football")
                 }
+            
+            WeatherView()
+                .tabItem {
+                    Label("Weather", systemImage: "cloud.sun")
+                }
         }
     }
 }

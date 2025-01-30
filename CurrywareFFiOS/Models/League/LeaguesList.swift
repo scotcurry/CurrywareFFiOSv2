@@ -24,6 +24,11 @@ struct LeagueList: Identifiable {
         self.leagueID = leagueID
         self.leagueName = leagueName
         self.leagueDisplayName = leagueDisplayName
+        LoggingHandler.createLogEntry(message: "LeagueList initialized") 
+    }
+    
+    static func startLogging() {
+        LoggingHandler.createLogEntry(message: "LeagueList logging started")
     }
 }
 
