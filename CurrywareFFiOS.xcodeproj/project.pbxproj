@@ -28,6 +28,7 @@
 		8942B1462A83FDC50055993E /* DatabaseAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942B1452A83FDC50055993E /* DatabaseAPIView.swift */; };
 		8967A84F2A81AF510088F42E /* DatabaseAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */; };
 		8972974D2C7E47BD009937DC /* InitialContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972974C2C7E47BD009937DC /* InitialContent.swift */; };
+		897CE7E02DC275D900380F42 /* GameInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CE7DE2DC275D900380F42 /* GameInfoViewModel.swift */; };
 		898052902DB9113B00CF1C54 /* LeagueSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980528F2DB9113B00CF1C54 /* LeagueSelectorView.swift */; };
 		89A7EBEC2A83D54000A04B07 /* LoggingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */; };
 		89F5010F2A7FC42B00887D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5010E2A7FC42B00887D92 /* AppDelegate.swift */; };
@@ -77,6 +78,7 @@
 		8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIHandler.swift; sourceTree = "<group>"; };
 		897297452C7E45D8009937DC /* LeagueSettingCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueSettingCardView.swift; sourceTree = "<group>"; };
 		8972974C2C7E47BD009937DC /* InitialContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialContent.swift; sourceTree = "<group>"; };
+		897CE7DE2DC275D900380F42 /* GameInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoViewModel.swift; sourceTree = "<group>"; };
 		8980528F2DB9113B00CF1C54 /* LeagueSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectorView.swift; sourceTree = "<group>"; };
 		898A1E392CC9D8B20059078D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingHandler.swift; sourceTree = "<group>"; };
@@ -98,14 +100,6 @@
 		89F5C0072A7ED3C200B3EEC7 /* LeagueSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectionView.swift; sourceTree = "<group>"; };
 		89F5C0092A7ED42A00B3EEC7 /* LeaguesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		897A4F372DBEF217001103A7 /* ViewModels */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		89F5BFC02A7E89C900B3EEC7 /* Frameworks */ = {
@@ -175,6 +169,14 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		897CE7DF2DC275D900380F42 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				897CE7DE2DC275D900380F42 /* GameInfoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		89F5BFBA2A7E89C900B3EEC7 = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +205,7 @@
 			children = (
 				89397C8A2A7F21C6008FC7A9 /* Classes */,
 				89F5C0012A7E92EB00B3EEC7 /* Models */,
-				897A4F372DBEF217001103A7 /* ViewModels */,
+				897CE7DF2DC275D900380F42 /* ViewModels */,
 				89F5BFF02A7E89D700B3EEC7 /* Views */,
 				89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */,
 				89F5BFCA2A7E89CA00B3EEC7 /* Assets.xcassets */,
@@ -275,9 +277,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				897A4F372DBEF217001103A7 /* ViewModels */,
 			);
 			name = CurrywareFFiOS;
 			packageProductDependencies = (
@@ -421,6 +420,7 @@
 				89F5C00A2A7ED42A00B3EEC7 /* LeaguesList.swift in Sources */,
 				8934A8492A82824100467E8D /* SalesTaxListObservable.swift in Sources */,
 				89F5BFC72A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift in Sources */,
+				897CE7E02DC275D900380F42 /* GameInfoViewModel.swift in Sources */,
 				8907F2D92DB278B0004001B8 /* GameInfo.swift in Sources */,
 				89F5C0032A7E931200B3EEC7 /* LeagueSetting.swift in Sources */,
 				89397C8C2A7F21E9008FC7A9 /* BundleHandler.swift in Sources */,
