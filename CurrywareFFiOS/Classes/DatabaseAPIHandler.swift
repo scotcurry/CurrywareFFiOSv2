@@ -40,9 +40,9 @@ struct DatabaseAPIHandler {
             responseSpan.finish()
             return salesTaxEntries
         } else {
+            responseSpan.finish()
             throw DatabaseHandlerError.noDatabaseURL
-        }
-        responseSpan.finish()
+        }   
     }
 }
 

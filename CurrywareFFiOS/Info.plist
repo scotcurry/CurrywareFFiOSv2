@@ -6,15 +6,5 @@
 	<string>$(APP_ID)</string>
 	<key>CLIENT_TOKEN</key>
 	<string>$(CLIENT_TOKEN)</string>
-	<key>DATABASE_URL</key>
-	<string>https://win2019server.curryware.org/api/Database</string>
-	<key>UILaunchScreen</key>
-	<dict>
-		<key>UILaunchScreen</key>
-		<dict>
-			<key>LaunchScreen</key>
-			<string></string>
-		</dict>
-	</dict>
 </dict>
 </plist>

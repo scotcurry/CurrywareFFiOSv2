@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		890C3AEA2D3893BA00C5BEE2 /* CurrywareLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890C3AE92D3893BA00C5BEE2 /* CurrywareLaunchScreen.storyboard */; };
+		8907F2D72DB272E0004001B8 /* CurrywareLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8907F2D62DB272E0004001B8 /* CurrywareLaunchScreen.storyboard */; };
+		8907F2D92DB278B0004001B8 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8907F2D82DB278B0004001B8 /* GameInfo.swift */; };
 		8934A8432A826B4600467E8D /* LeagueSettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A8422A826B4600467E8D /* LeagueSettingList.swift */; };
 		8934A8472A827F1200467E8D /* SaleTaxEntryIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A8462A827F1200467E8D /* SaleTaxEntryIdentifiable.swift */; };
 		8934A8492A82824100467E8D /* SalesTaxListObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934A8482A82824100467E8D /* SalesTaxListObservable.swift */; };
@@ -27,6 +28,7 @@
 		8942B1462A83FDC50055993E /* DatabaseAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942B1452A83FDC50055993E /* DatabaseAPIView.swift */; };
 		8967A84F2A81AF510088F42E /* DatabaseAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */; };
 		8972974D2C7E47BD009937DC /* InitialContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972974C2C7E47BD009937DC /* InitialContent.swift */; };
+		898052902DB9113B00CF1C54 /* LeagueSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980528F2DB9113B00CF1C54 /* LeagueSelectorView.swift */; };
 		89A7EBEC2A83D54000A04B07 /* LoggingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */; };
 		89F5010F2A7FC42B00887D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5010E2A7FC42B00887D92 /* AppDelegate.swift */; };
 		89F5BFC72A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */; };
@@ -60,7 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		890C3AE92D3893BA00C5BEE2 /* CurrywareLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrywareLaunchScreen.storyboard; sourceTree = "<group>"; };
+		8907F2D62DB272E0004001B8 /* CurrywareLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CurrywareLaunchScreen.storyboard; path = CurrywareFFiOS/CurrywareLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		8907F2D82DB278B0004001B8 /* GameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
 		8934A8422A826B4600467E8D /* LeagueSettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSettingList.swift; sourceTree = "<group>"; };
 		8934A8462A827F1200467E8D /* SaleTaxEntryIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleTaxEntryIdentifiable.swift; sourceTree = "<group>"; };
 		8934A8482A82824100467E8D /* SalesTaxListObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxListObservable.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		8967A84E2A81AF510088F42E /* DatabaseAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIHandler.swift; sourceTree = "<group>"; };
 		897297452C7E45D8009937DC /* LeagueSettingCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueSettingCardView.swift; sourceTree = "<group>"; };
 		8972974C2C7E47BD009937DC /* InitialContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialContent.swift; sourceTree = "<group>"; };
+		8980528F2DB9113B00CF1C54 /* LeagueSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectorView.swift; sourceTree = "<group>"; };
 		898A1E392CC9D8B20059078D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingHandler.swift; sourceTree = "<group>"; };
 		89B292162A86A7DB00A264E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -94,6 +98,14 @@
 		89F5C0072A7ED3C200B3EEC7 /* LeagueSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectionView.swift; sourceTree = "<group>"; };
 		89F5C0092A7ED42A00B3EEC7 /* LeaguesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		897A4F372DBEF217001103A7 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		89F5BFC02A7E89C900B3EEC7 /* Frameworks */ = {
@@ -145,6 +157,7 @@
 				89F5C0022A7E931200B3EEC7 /* LeagueSetting.swift */,
 				89F5C0092A7ED42A00B3EEC7 /* LeaguesList.swift */,
 				8934A8422A826B4600467E8D /* LeagueSettingList.swift */,
+				8907F2D82DB278B0004001B8 /* GameInfo.swift */,
 			);
 			path = League;
 			sourceTree = "<group>";
@@ -165,7 +178,6 @@
 		89F5BFBA2A7E89C900B3EEC7 = {
 			isa = PBXGroup;
 			children = (
-				890C3AE92D3893BA00C5BEE2 /* CurrywareLaunchScreen.storyboard */,
 				898A1E392CC9D8B20059078D /* .gitignore */,
 				89B292162A86A7DB00A264E7 /* README.md */,
 				89F5C0002A7E8E6100B3EEC7 /* secrets.xcconfig */,
@@ -191,10 +203,12 @@
 			children = (
 				89397C8A2A7F21C6008FC7A9 /* Classes */,
 				89F5C0012A7E92EB00B3EEC7 /* Models */,
+				897A4F372DBEF217001103A7 /* ViewModels */,
 				89F5BFF02A7E89D700B3EEC7 /* Views */,
 				89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */,
 				89F5BFCA2A7E89CA00B3EEC7 /* Assets.xcassets */,
 				89F5BFCC2A7E89CA00B3EEC7 /* Preview Content */,
+				8907F2D62DB272E0004001B8 /* CurrywareLaunchScreen.storyboard */,
 			);
 			path = CurrywareFFiOS;
 			sourceTree = "<group>";
@@ -233,6 +247,7 @@
 				89F5BFF12A7E89F800B3EEC7 /* LeagueSettingsView.swift */,
 				8972974C2C7E47BD009937DC /* InitialContent.swift */,
 				893F714A2CC481CF006DCF28 /* WeatherView.swift */,
+				8980528F2DB9113B00CF1C54 /* LeagueSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -260,6 +275,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				897A4F372DBEF217001103A7 /* ViewModels */,
 			);
 			name = CurrywareFFiOS;
 			packageProductDependencies = (
@@ -319,7 +337,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					89F5BFC22A7E89C900B3EEC7 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -363,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89F5BFCE2A7E89CA00B3EEC7 /* Preview Assets.xcassets in Resources */,
-				890C3AEA2D3893BA00C5BEE2 /* CurrywareLaunchScreen.storyboard in Resources */,
+				8907F2D72DB272E0004001B8 /* CurrywareLaunchScreen.storyboard in Resources */,
 				89F5BFCB2A7E89CA00B3EEC7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,11 +421,13 @@
 				89F5C00A2A7ED42A00B3EEC7 /* LeaguesList.swift in Sources */,
 				8934A8492A82824100467E8D /* SalesTaxListObservable.swift in Sources */,
 				89F5BFC72A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift in Sources */,
+				8907F2D92DB278B0004001B8 /* GameInfo.swift in Sources */,
 				89F5C0032A7E931200B3EEC7 /* LeagueSetting.swift in Sources */,
 				89397C8C2A7F21E9008FC7A9 /* BundleHandler.swift in Sources */,
 				8934A8432A826B4600467E8D /* LeagueSettingList.swift in Sources */,
 				8934A85C2A83039D00467E8D /* SalesTaxList.swift in Sources */,
 				8934A8472A827F1200467E8D /* SaleTaxEntryIdentifiable.swift in Sources */,
+				898052902DB9113B00CF1C54 /* LeagueSelectorView.swift in Sources */,
 				8942B1462A83FDC50055993E /* DatabaseAPIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +499,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D8MTP98QK2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -540,6 +561,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D8MTP98QK2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -567,11 +589,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrywareFFiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = D8MTP98QK2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CurrywareFFiOS/Info.plist;
@@ -581,7 +603,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,7 +613,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -602,11 +624,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrywareFFiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = D8MTP98QK2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CurrywareFFiOS/Info.plist;
@@ -616,7 +638,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,7 +648,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -637,7 +659,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8MTP98QK2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -656,7 +677,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8MTP98QK2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -674,7 +694,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8MTP98QK2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.curryware.CurrywareFFiOSUITests;
@@ -691,7 +710,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8MTP98QK2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.curryware.CurrywareFFiOSUITests;

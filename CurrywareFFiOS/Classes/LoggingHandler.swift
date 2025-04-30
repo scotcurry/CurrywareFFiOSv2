@@ -14,7 +14,6 @@ public struct LoggingHandler {
     
     static func createLogEntry(message: String) {
         
-        let appID: String = BundleHandler.getAppID()
         let clientToken: String = BundleHandler.getClientToken()
 
         let datadogConfiguration = Datadog.Configuration(

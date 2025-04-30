@@ -16,7 +16,7 @@ struct InitialContent: View {
         
         TabView {
             
-            LeagueSelectionView(leagueList: leagueList)
+            LeagueSelectorView()
                 .tabItem {
                     Label("Selector", systemImage: "house.fill")
                 }

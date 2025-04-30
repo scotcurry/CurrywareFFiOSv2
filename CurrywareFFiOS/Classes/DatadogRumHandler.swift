@@ -33,17 +33,17 @@ struct DatadogRumHandler {
             uiKitActionsPredicate: DefaultUIKitRUMActionsPredicate())
         RUM.enable(with: rumConfiguration)
 
-//        Logs.enable()
-//        let loggerConfiguration = Logger.Configuration(
-//            name: "currywareffios",
-//            networkInfoEnabled: true,
-//            remoteLogThreshold: .info,
-//            consoleLogFormat: .shortWith(prefix: "iOS")
-//        )
-//        let logger = Logger.create(with: loggerConfiguration)
-//        Datadog.verbosityLevel = .debug
-//        logger.info("Starting Logging", attributes: ["location": "DatadogRumHandler"])
-//        logger.debug("Debug Logging Enabled")
+        Logs.enable()
+        let loggerConfiguration = Logger.Configuration(
+            name: "currywareffios",
+            networkInfoEnabled: true,
+            remoteLogThreshold: .info,
+            consoleLogFormat: .shortWith(prefix: "iOS")
+        )
+        let logger = Logger.create(with: loggerConfiguration)
+        Datadog.verbosityLevel = .debug
+        logger.info("Starting Logging", attributes: ["location": "DatadogRumHandler"])
+        logger.debug("Debug Logging Enabled")
         
         let traceConfiguration = Trace.Configuration(sampleRate: 100, networkInfoEnabled: true)
         Trace.enable(with: traceConfiguration)
