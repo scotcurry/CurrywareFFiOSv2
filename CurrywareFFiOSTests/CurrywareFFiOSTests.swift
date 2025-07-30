@@ -39,4 +39,10 @@ final class CurrywareFFiOSTests: XCTestCase {
 //        let returnValue = try await databaseAPIHandler.makeDatabaseAPICall()
 //        XCTAssertEqual("scot", "1")
     }
+    
+    func testPlayerInfoAPIHandler() async throws {
+        
+        let playerInfoHandler = await PlayerInfoHandler()
+        let returnValue = try await playerInfoHandler.getPlayerInfoList()
+    }
 }

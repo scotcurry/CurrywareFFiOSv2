@@ -29,7 +29,7 @@ public struct LoggingHandler {
         let ddInitialized = Datadog.isInitialized()
         
         if ddInitialized == false {
-            Datadog.initialize(with: datadogConfiguration, trackingConsent: .granted)
+            Datadog.initialize(with: datadogConfiguration, trackingConsent: .pending)
             let logger = Logger.create(with: loggerConfiguration)
             logger.info("Initialized Logger")
         } else {

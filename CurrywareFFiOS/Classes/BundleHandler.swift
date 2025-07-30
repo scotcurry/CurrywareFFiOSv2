@@ -35,4 +35,13 @@ struct BundleHandler {
             return "No Database URL"
         }
     }
+    
+    static func getPlayerInfoURL() -> String {
+        let playerInfoURL = Bundle.main.infoDictionary?["PLAYER_INFO_URL"] as? String
+        if let playerInfoURL = playerInfoURL {
+            return playerInfoURL
+        } else {
+            return "No Player Info URL"
+        }
+    }
 }

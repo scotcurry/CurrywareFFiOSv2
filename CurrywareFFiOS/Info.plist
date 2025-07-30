@@ -6,5 +6,9 @@
 	<string>$(APP_ID)</string>
 	<key>CLIENT_TOKEN</key>
 	<string>$(CLIENT_TOKEN)</string>
+	<key>DatadogTrackingSettings</key>
+	<string>pending</string>
+	<key>PLAYER_INFO_URL</key>
+	<string>https://ubuntu-microk8s.curryware.org/java/players/getplayers</string>
 </dict>
 </plist>

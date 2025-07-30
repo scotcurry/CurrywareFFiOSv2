@@ -22,7 +22,14 @@ struct DatadogRumHandler {
             clientToken: clientToken,
             env: "prod")
         
-        Datadog.initialize(with: datadogConfiguration, trackingConsent: .granted)
+        let gdrpAccepted = UserDefaults.standard.string(forKey: "gdrpAccepted")
+        if gdrpAccepted != "pending" || gdrpAccepted == nil {
+            Datadog.initialize(with: datadogConfiguration, trackingConsent: .pending)
+        } else if gdrpAccepted == "granted" {
+            Datadog.initialize(with: datadogConfiguration, trackingConsent: .granted)
+        } else if gdrpAccepted == "notGranted" {
+            Datadog.initialize(with: datadogConfiguration, trackingConsent: .notGranted)
+        }
 
         // Use this if you want detailed information about the Datadog process.
         Datadog.verbosityLevel = .debug

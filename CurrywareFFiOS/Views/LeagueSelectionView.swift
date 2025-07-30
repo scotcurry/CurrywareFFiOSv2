@@ -3,7 +3,6 @@
 
 import SwiftUI
 import DatadogLogs
-// import DatadogCore
 
 struct LeagueSelectionView: View {
     

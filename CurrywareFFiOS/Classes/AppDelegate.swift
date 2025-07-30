@@ -15,5 +15,4 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         DatadogRumHandler.startLogging()
         return true
     }
-    
 }

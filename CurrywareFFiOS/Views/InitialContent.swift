@@ -12,8 +12,9 @@ struct InitialContent: View {
     let leagueList: [LeagueList]
     let leagueSettings: [LeagueSetting]
     
+    
     var body: some View {
-        
+                
         TabView {
             
             LeagueSelectorView()

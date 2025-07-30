@@ -8,27 +8,39 @@
 import Foundation
 
 @MainActor
-class PlayerInfoList: ObservableObject {
+class PlayerInfoHandler: ObservableObject {
     
     @Published private(set) var playerInfoList: [PlayerInfo] = []
+    @Published var errorMessage: String?
     
-    func getPlayerInfoList() async throws -> [PlayerInfo] {
+    func getPlayerInfoList() async {
         
+        print("Calling getPlayerInfoList")
         LoggingHandler.createLogEntry(message: "Starting getPlayerInfoList")
-        let urlString = "https://ubuntu-microk8s.curryware.org/java/players/getplayers"
-        if let playerURL = URL(string: urlString) {
-            var request = URLRequest(url: playerURL)
-            request.httpMethod = "GET"
-            let (data, response) = try await URLSession.shared.data(for: request)
-            let validRange = 200..<300
-            guard let httpResponse = response as? HTTPURLResponse, validRange.contains(httpResponse.statusCode) else {
-                LoggingHandler.createLogEntry(message: "Failed to get player info list")
-                return playerInfoList
+        // TODO: Handle error if there is ever an error condition.
+        do {
+        let urlString = BundleHandler.getPlayerInfoURL()
+            if let playerURL = URL(string: urlString) {
+                var request = URLRequest(url: playerURL)
+                request.httpMethod = "GET"
+                let (data, response) = try await URLSession.shared.data(for: request)
+                let validRange = 200..<300
+                guard let httpResponse = response as? HTTPURLResponse, validRange.contains(httpResponse.statusCode) else {
+                    LoggingHandler.createLogEntry(message: "Failed to get player info list")
+                    throw PlayerInfoError.invalidResponse
+                }
+                let decoder = JSONDecoder()
+                playerInfoList = try! decoder.decode([PlayerInfo].self, from: data)
             }
-            let decoder = JSONDecoder()
-            let playerInfoListData = try! decoder.decode([PlayerInfo].self, from: data)
-            self.playerInfoList = playerInfoListData
+        } catch PlayerInfoError.invalidResponse {
+            LoggingHandler.createLogEntry(message: "Failed to get player info list: \(String(describing: errorMessage))")
+        } catch {
+            LoggingHandler.createLogEntry(message: "Unknown Exception: \(error)")
         }
-        return playerInfoList
     }
+}
+
+enum PlayerInfoError: Error {
+    case invalidResponse
+    case noDatabaseURL
 }
