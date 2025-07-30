@@ -57,14 +57,14 @@
       "size" : "40x40"
     },
     {
-      "filename" : "Icon_120×120@3x 1.png",
+      "filename" : "CurrywareFantasy-120.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "Icon_180×180@3x.png",
+      "filename" : "CurrywareFantasy-180.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
@@ -78,7 +78,6 @@
       "size" : "64x64"
     },
     {
-      "filename" : "Icon_192×192@3x.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
@@ -99,14 +98,14 @@
       "size" : "76x76"
     },
     {
-      "filename" : "Icon_167x167@2x.png",
+      "filename" : "CurrywareFantasy-167.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "Icon-App-iTunes.png",
+      "filename" : "CurrywareFantasy-1024.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
