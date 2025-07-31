@@ -32,7 +32,7 @@ struct PlayerInfo: Codable, Identifiable {
         case playerHeadshot = "player_headshot"
     }
     
-    init(/* id: UUID = UUID(),*/ id: String, playerSeasonKey: String, playerName: String, playerUrl: String, playerTeam: String, playerByeWeek: Int,
+    init(id: String, playerSeasonKey: String, playerName: String, playerUrl: String, playerTeam: String, playerByeWeek: Int,
          playerUniformNumber: Int, playerPosition: String, playerHeadshot: String) {
         
         // self.id = id

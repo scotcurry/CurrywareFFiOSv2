@@ -47,14 +47,6 @@ private func pullGameInfo() async -> String {
     guard let url = URL(string: "https://ubuntu-microk8s.curryware.org/java/game_info/get_game_info", encodingInvalidCharacters: true) else {
         return "Scot"
     }
-//    let downloadTask = URLSession.shared.downloadTask(with: url) { localUrl, urlResponse, error in
-//        if let localUrl = localUrl {
-//            if let data = try? Data(contentsOf: localUrl) {
-//                print(String(data: data, encoding: .utf8) ?? "No Data")
-//            }
-//        }
-//    }
-//    downloadTask.resume()
     
     do
     {

@@ -10,8 +10,6 @@ import SwiftUI
 struct PlayerInfoView: View {
     
     @StateObject var playerModel = PlayerInfoHandler()
-    // @State private var playerInfo: [PlayerInfo] = []
-    //let playerInfo: [PlayerInfo]
     
     var body: some View {
         NavigationView {
@@ -29,6 +27,7 @@ struct PlayerInfoView: View {
     
 struct PlayerInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerInfoView()
+        let playerInfoHandler = PlayerInfoHandler()
+        PlayerInfoView(playerModel: playerInfoHandler)
     }
 }

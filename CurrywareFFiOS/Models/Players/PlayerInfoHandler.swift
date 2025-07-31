@@ -17,7 +17,7 @@ class PlayerInfoHandler: ObservableObject {
         
         print("Calling getPlayerInfoList")
         LoggingHandler.createLogEntry(message: "Starting getPlayerInfoList")
-        // TODO: Handle error if there is ever an error condition.
+    
         do {
         let urlString = BundleHandler.getPlayerInfoURL()
             if let playerURL = URL(string: urlString) {
