@@ -18,10 +18,16 @@ struct DatadogRumHandler {
         let appID: String = BundleHandler.getAppID()
         let clientToken: String = BundleHandler.getClientToken()
 
+        // Datadog agent initialization parameters - https://docs.datadoghq.com/real_user_monitoring/mobile_and_tv_monitoring/ios/advanced_configuration/?tab=swift#initialization-parameters
         let datadogConfiguration = Datadog.Configuration(
             clientToken: clientToken,
-            env: "prod")
+            env: "prod",
+            service: "currywareffios" //,
+            // uploadFrequency: .average,
+            // backgroundTasksEnabled: false
+        )
         
+        // GDRP Tracking configuration is handled by prompting the user in the NavigationHandler view.  User is prompt to accept it.
         let gdrpAccepted = UserDefaults.standard.string(forKey: "gdrpAccepted")
         if gdrpAccepted != "pending" || gdrpAccepted == nil {
             Datadog.initialize(with: datadogConfiguration, trackingConsent: .pending)

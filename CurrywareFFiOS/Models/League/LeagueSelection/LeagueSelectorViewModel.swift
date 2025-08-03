@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 @MainActor
-class GameInfoViewModel: ObservableObject {
+class LeagueSelectorViewModel: ObservableObject {
     
-    @Published var items: [GameInfo] = []
+    @Published private(set) var items: [LeagueSelectionModel] = []
     
     // It is important to note that you don't return anything in the ViewModel, you just set the published property.
     func fetchGameInfo() async {
@@ -37,7 +37,7 @@ class GameInfoViewModel: ObservableObject {
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 fatalError("Bad response from server")
             }
-            items = try JSONDecoder().decode([GameInfo].self, from: data)
+            items = try JSONDecoder().decode([LeagueSelectionModel].self, from: data)
         } catch {
             print("Failed to fetch game info: \(error)")
             return

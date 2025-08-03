@@ -9,9 +9,7 @@ import SwiftUI
 
 struct InitialContent: View {
     
-    let leagueList: [LeagueList]
-    let leagueSettings: [LeagueSetting]
-    
+    let league: LeagueSelectionModel
     
     var body: some View {
                 
@@ -22,10 +20,10 @@ struct InitialContent: View {
                     Label("Selector", systemImage: "house.fill")
                 }
             
-            LeagueSettingsView(leagueSettings: leagueSettings)
-                .tabItem {
-                    Label("Pass Settings", systemImage: "figure.american.football")
-                }
+//            LeagueSettingsView(leagueSettings: leagueSettings)
+//                .tabItem {
+//                    Label("Pass Settings", systemImage: "figure.american.football")
+//                }
             
             WeatherView()
                 .tabItem {
@@ -37,10 +35,9 @@ struct InitialContent: View {
 
 struct InitialContentView_Previews: PreviewProvider{
     
-    static var leagueList = LeagueList.leagueData
-    static var leagueSettings = LeagueSetting.sampleData
+    static var leagueSettings = LeagueSelectionModel(league_id: "1", game_id: "461", team_name: "Datadog 2025", paid_league: true)
     
     static var previews: some View {
-        InitialContent(leagueList: leagueList, leagueSettings: leagueSettings)
+        InitialContent(league: leagueSettings)
     }
 }

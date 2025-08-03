@@ -2,7 +2,7 @@
 //  LeagueSettingCardView.swift
 //  CurrywareFFiOS
 //
-//  Created by Scot Curry on 8/5/23.
+//  Created by Scot Curry on 8/3/25.
 //
 
 import SwiftUI

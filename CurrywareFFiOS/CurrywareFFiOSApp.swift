@@ -17,9 +17,9 @@ struct CurrywareFFiOSApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
+        // let _ = DatadogRumHandler.startDatadog()
         WindowGroup {
-            // InitialContent(leagueList: leagueList, leagueSettings: leagueSettings)
-            NavigationHandler()
+            LeagueSelectorView()
         }
     }
 }

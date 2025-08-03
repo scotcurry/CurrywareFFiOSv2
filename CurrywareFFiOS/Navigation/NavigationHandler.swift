@@ -15,7 +15,7 @@ struct NavigationHandler: View {
     // from UserDefaults.  It also, INVALIDATES the view if the value changes.  This
     // means that the application always starts with a pending state.  The user changes
     // it and it will
-    @AppStorage("gdrpAccepted") private var gdrpAccepted: String = "pending"
+    @AppStorage("gdrpAccepted") private var gdrpAccepted = "pending"
     private var shouldShowGDPRAlert: Bool {
         return gdrpAccepted == "pending"
     }
@@ -29,7 +29,7 @@ struct NavigationHandler: View {
         )
     }
     
-    let leagueList = LeagueList.leagueData
+    // let leagueList = LeagueList.leagueData
     let leagueSettings = LeagueSetting.sampleData
     @State private var showAlert: Bool = true
     var gdprTracking: String = "pending"
@@ -39,7 +39,7 @@ struct NavigationHandler: View {
         NavigationStack {
             Spacer()
             NavigationLink {
-                InitialContent(leagueList: leagueList, leagueSettings: leagueSettings)
+                LeagueSelectorView()
             } label: {
                 HStack {
                     Image(systemName: "person.2.circle.fill")
@@ -74,23 +74,23 @@ struct NavigationHandler: View {
             .navigationTitle("Options")
         }
         
+        // This is where we put the initial message to have users accept GDRP.  This causes the
+        // gdrpAccepted variable above to be updated which invalidates this view and causes it to
+        // be redrawn.  At the same time, Datadog RUM is initialized.
         .alert("GDPR", isPresented: alertBinding) {
             Button("Allow Datadog") {
-                UserDefaults.standard.set("granted", forKey: "gdprAllowed")
+                UserDefaults.standard.set("granted", forKey: "gdrpAccepted")
                 Datadog.set(trackingConsent: .granted)
+                DatadogRumHandler.startDatadog()
             }
             Button("Cancel") {
-                UserDefaults.standard.set("notGranted", forKey: "gdprAllowed")
+                UserDefaults.standard.set("notGranted", forKey: "gdrpAccepted")
             }
         } message: {
             Text("Alert Message")
         }
     }
 }
-
-//func loadGDPRTracking() -> String {
-//    return UserDefaults.standard.bool(forKey: "gdprAllowed") ? "allowed" : "pending"
-//}
 
 #Preview {
     NavigationHandler()

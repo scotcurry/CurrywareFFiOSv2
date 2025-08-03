@@ -2,7 +2,7 @@
 //  LeagueSettingList.swift
 //  CurrywareFFiOS
 //
-//  Created by Scot Curry on 8/8/23.
+//  Created by Scot Curry on 8/3/25.
 //
 
 import Foundation
