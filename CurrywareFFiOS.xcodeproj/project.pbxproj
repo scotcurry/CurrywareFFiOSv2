@@ -22,7 +22,6 @@
 		893F714D2CC4834E006DCF28 /* WeatherHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F714C2CC4834E006DCF28 /* WeatherHandler.swift */; };
 		8972974D2C7E47BD009937DC /* InitialContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972974C2C7E47BD009937DC /* InitialContent.swift */; };
 		897F3E912E3FA1F400906B4F /* LeagueSettingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F3E902E3FA1F400906B4F /* LeagueSettingCardView.swift */; };
-		898052902DB9113B00CF1C54 /* LeagueSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980528F2DB9113B00CF1C54 /* LeagueSelectorView.swift */; };
 		89A7EBEC2A83D54000A04B07 /* LoggingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */; };
 		89F5010F2A7FC42B00887D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5010E2A7FC42B00887D92 /* AppDelegate.swift */; };
 		89F5BFC72A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5BFC62A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift */; };
@@ -60,7 +59,6 @@
 		893F714C2CC4834E006DCF28 /* WeatherHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHandler.swift; sourceTree = "<group>"; };
 		8972974C2C7E47BD009937DC /* InitialContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialContent.swift; sourceTree = "<group>"; };
 		897F3E902E3FA1F400906B4F /* LeagueSettingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSettingCardView.swift; sourceTree = "<group>"; };
-		8980528F2DB9113B00CF1C54 /* LeagueSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectorView.swift; sourceTree = "<group>"; };
 		898A1E392CC9D8B20059078D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		89A7EBEB2A83D54000A04B07 /* LoggingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingHandler.swift; sourceTree = "<group>"; };
 		89B292162A86A7DB00A264E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -224,7 +222,6 @@
 				89F5BFF12A7E89F800B3EEC7 /* LeagueSettingsView.swift */,
 				8972974C2C7E47BD009937DC /* InitialContent.swift */,
 				893F714A2CC481CF006DCF28 /* WeatherView.swift */,
-				8980528F2DB9113B00CF1C54 /* LeagueSelectorView.swift */,
 				890ADFA52DE618FB00087B18 /* DatadogGDRP.swift */,
 			);
 			path = Views;
@@ -399,7 +396,6 @@
 				890ADFA62DE618FB00087B18 /* DatadogGDRP.swift in Sources */,
 				89F5BFC72A7E89C900B3EEC7 /* CurrywareFFiOSApp.swift in Sources */,
 				89397C8C2A7F21E9008FC7A9 /* BundleHandler.swift in Sources */,
-				898052902DB9113B00CF1C54 /* LeagueSelectorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

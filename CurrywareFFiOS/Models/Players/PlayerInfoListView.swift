@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlayerInfoView: View {
+struct PlayerInfoListView: View {
     
     @StateObject var playerModel = PlayerInfoHandler()
     
@@ -15,7 +15,9 @@ struct PlayerInfoView: View {
         NavigationView {
             List {
                 ForEach(playerModel.playerInfoList) { playerInfo in
-                    Text(playerInfo.playerName)
+                    NavigationLink(playerInfo.playerName) {
+                        PlayerDetailView(playerDetail: playerInfo)
+                    }
                 }
             }
             .task {
@@ -28,6 +30,6 @@ struct PlayerInfoView: View {
 struct PlayerInfoView_Previews: PreviewProvider {
     static var previews: some View {
         let playerInfoHandler = PlayerInfoHandler()
-        PlayerInfoView(playerModel: playerInfoHandler)
+        PlayerInfoListView(playerModel: playerInfoHandler)
     }
 }

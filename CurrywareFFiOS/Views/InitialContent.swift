@@ -15,9 +15,9 @@ struct InitialContent: View {
                 
         TabView {
             
-            LeagueSelectorView()
+            PlayerInfoListView()
                 .tabItem {
-                    Label("Selector", systemImage: "house.fill")
+                    Label("Players", systemImage: "house.fill")
                 }
             
 //            LeagueSettingsView(leagueSettings: leagueSettings)

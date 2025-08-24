@@ -39,7 +39,7 @@ struct NavigationHandler: View {
         NavigationStack {
             Spacer()
             NavigationLink {
-                LeagueSelectorView()
+                LeagueSelectionView()
             } label: {
                 HStack {
                     Image(systemName: "person.2.circle.fill")
@@ -56,7 +56,7 @@ struct NavigationHandler: View {
             }
             Spacer()
             NavigationLink {
-                LeagueSelectorView()
+                LeagueSelectionView()
             } label: {
                 Text("League")
                     .font(.title)
@@ -64,7 +64,7 @@ struct NavigationHandler: View {
             }
             Spacer()
             NavigationLink {
-                PlayerInfoView()
+                PlayerInfoListView()
             } label: {
                 Text("Player Info")
                     .font(.title)

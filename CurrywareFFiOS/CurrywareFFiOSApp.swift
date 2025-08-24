@@ -19,7 +19,7 @@ struct CurrywareFFiOSApp: App {
     var body: some Scene {
         // let _ = DatadogRumHandler.startDatadog()
         WindowGroup {
-            LeagueSelectorView()
+            LeagueSelectionView()
         }
     }
 }
